@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="WPAS">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Private portfolio page">
+  <title>Portfolio</title>
+  <script src="https://use.fontawesome.com/b584e3bc6a.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <nav class="menu topnav">
+    <div class="mobilenav"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    <h1><a href="./index.html">Portfolio</a></h1>
+    <ul class="navigation">
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#rwd">RWD</a></li>
+      <li><a href="#react">React</a></li>
+      <li><a href="#restapi">Rest API's</a></li>
+      <li><a href="#other">Other</a></li>
+    </ul>
+  </nav>
+  <div class="block" id="intro">
+    <div class="container">
+      <article>
+        <h2>Intro</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+      </article>
+    </div>
+  </div>
+  <div class="block" id="rwd">
+    <div class="container">
+      <a href="http://portfolio.archeowiesci.com/truetravel"><img src="./images/truetravel_screenshot.jpg" alt="Zdjęcie projektu TrueTravel" /></a>
+      <article>
+        <h2>RWD</h2>
+        <p>Strona responsywna, którą zrobiłem zgodnie z zasadą "mobile first". Wykorzystałem SASS i vanilla Javascript, w którym napisałem mobilną nawigację, prostą karuzelę, modal i akordion.</p>
+        <a class="button" href="http://portfolio.archeowiesci.com/truetravel">Zobacz stronę</a>
+        <a class="button" href="https://github.com/WPAS/TrueTravel">Zobacz kod</a>
+      </article>
+    </div>
+  </div>
+  <div class="block" id="react">
+    <div class="container">
+      <a href="http://portfolio.archeowiesci.com/todo"><img src="./images/todo.jpg" alt="Zdjęcie aplikacji todo" /></a>
+      <article>
+        <h2>React</h2>
+        <p>Mała aplikacja typu ToDo, którą stworzyłem dla przećwiczenia React.js oraz ES6. Korzystałem z MaterialUI, a dane zapisywane są w local storage.</p>
+        <a class="button" href="http://portfolio.archeowiesci.com/todo">Sprawdź apkę</a>
+        <a class="button" href="https://github.com/WPAS/TodoWithMaterialUI">Zobacz kod</a>
+      </article>
+    </div>
+  </div>
+  <div class="block" id="restapi">
+    <div class="container">      
+      <article>
+        <h2>Rest API's</h2>
+        <section>
+          <h3>JS i PHP OOP</h3>
+          <p>Backend napisałem w obiektowym PHP bez użycia frameworków. Front wykonałem w vanilla JS. Tworzenie zapytań ułatwiłem sobie za pomocą biblioteki axios.js</p>        
+          <a class="button" href="https://github.com/WPAS/RESTtraining">Zobacz kod</a>
+        </section>
+        <section>
+          <h3>React.js i Symfony 3</h3>
+          <p>Do wykonania backendu użyłem FOSRestBundle. Front napisałem korzystając z Foundation i Reacta z Routerem, ale raczej poległem na architekturze :).</p>
+          <a class="button" href="https://github.com/WPAS/CMSF">Kod frontu</a>
+          <a class="button" href="https://github.com/WPAS/CMS">Kod backendu</a>
+        </section>
+      </article>
+    </div>
+  </div>
+  <div class="block" id="other">
+    <div class="container">
+      <article>
+        <h2>Other works</h2>
+        <p>tatatata</p>
+      </article>
+    </div>
+  </div>                     
+  <footer>&copy;WPAS, 2017</footer> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./js/script.js" ></script>
+</body>
+</html>

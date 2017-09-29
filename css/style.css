@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext'); 
+
+* {
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+    font-size: 100%;
+}
+
+body, html, ul, li {
+    margin: 0;
+    padding: 0;    
+}
+
+a { 
+    color: aliceblue;
+    text-decoration: none;    
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  word-spacing: .3rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10% 3%;
+}
+
+.mobilenav {
+    display: none;
+}
+
+.topnav {
+    background-color: dimgray;
+    color: aliceblue;
+    width: 100%;   
+}
+
+.topnav h1 {
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 22px 0 22px 25px;
+    text-transform: uppercase;
+}
+
+.topnav ul {
+    float: right;
+    margin-bottom: -4px;
+}
+
+.topnav:after {
+    clear: both;
+    content: '';   
+    display: block;    
+}
+
+.topnav li {
+    display: inline-block;    
+}
+
+.topnav li a {
+    color: aliceblue;
+    display: block;
+    float: right;
+    list-style-type: none;
+    padding: 25px;
+}
+
+.topnav li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    position: fixed;
+    right: 2%;
+    top: 20%;
+    height: 150px;
+    opacity: 0.6;
+    z-index: 100;
+    padding: 0;
+}
+
+.navbar li {
+    display: block;
+    font-size: 0.001px;
+    list-style-type: none;
+    padding: 0;    
+}
+
+.navbar a {
+    background-color: aliceblue;
+    box-shadow: 3px 3px 3px #888;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.navbar a:hover {
+    background-color: dimgray;
+}
+
+.navbar li.active a {
+    background-color: dimgray;
+}
+
+.block {    
+    background-size: cover;
+    background-position: center center;
+    min-height: 800px;
+    min-height: 100vh;
+}
+
+.block:nth-child(even) {
+    background-color: black;
+}
+
+h2 {
+    font-size: 3em;
+    margin: 0;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 2rem 0;
+    padding: 5px;
+}
+
+#intro article {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px; 
+}
+
+.block article {   
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#intro {
+    background-image: url('http://lorempixel.com/1200/800/city');
+    background-color: chartreuse;
+}
+
+.button, #react .button:hover {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;    
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2rem;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;    
+}
+
+
+
+#rwd article {
+  float: left;
+  padding: 0 0 0 1rem;
+  width: 48%;  
+}
+
+#rwd img, #react img {    
+  display: block;
+  float: right;
+  margin: 0 auto;
+  padding-right: 3rem;
+  transform: rotate(6deg);
+  width: 38%;
+}
+
+#react img {    
+    float: left;
+    padding-left: 3rem;
+    transform: rotate(-6deg);
+    
+}
+
+#rwd .button:last-of-type {
+    margin-right: 0;
+}
+
+#react article {
+  color: white;
+  float: right;
+  width: 48%; 
+}
+
+
+
+#react .button, .button:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;    
+}
+
+#restapi section {
+  float: left;
+  width: 47%;  
+}
+
+#restapi section:first-of-type {
+  margin-right: 5%;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  height: 100px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+
+/*
+   MEDIA QUERIES
+*/
+
+
+@media screen and (max-width:1050px) {
+  .container {
+    padding-top: 20%;
+  }
+
+  #restapi .container {
+    padding-top: 12%;
+  }  
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    word-spacing: .2rem;
+  }  
+  
+  .button {
+    margin-right: 1rem;
+    padding: 1rem;
+  }
+  
+  #react .button:hover {
+    margin-top: .5rem;
+    margin-right: 1rem;
+    padding: 1rem;
+  }
+  
+}
+
+@media screen and (max-width:800px) {
+    .mobilenav {     
+      color: aliceblue;
+      display: block;  
+      font-size: 2em;
+      float: right;
+      padding: 10px 35px;
+      text-align: right;        
+      width: 40%;
+      z-index: 100;
+    }
+    
+    .topnav {
+        position: fixed;
+        z-index: 100;
+    }
+    
+    .topnav span {
+        padding: 17px 25px; 
+    }
+    
+    .navigation {
+        display: none;
+    }    
+    
+    .mobilestyle {
+        display: block;
+        width: 100%;
+    }
+    
+    .mobilestyle li {        
+        width: 100%;
+        margin-bottom: -4px;
+    }    
+    
+    .mobilestyle li a {
+        border-top: 1px solid aliceblue;  
+        padding: 25px;
+        width: 100%;
+    }
+    
+    .container {
+      padding: 10% 6%;
+    } 
+    
+    #rwd article, #react article {
+      float: none;
+      width: 100%;
+    }
+    
+    .button {
+      margin-top: .5rem;
+    }
+    
+    #react .button:hover {
+      margin-top: .5rem;
+    }
+    
+    #rwd img, #react img {      
+      float: none;
+      width: 50%;      
+    }
+    
+    #react article {
+      margin-top: 4rem;
+    }
+    
+    p {
+      font-size: 1.3rem;
+      line-height: 1.3;   
+    }
+
+    #restapi section {
+      float: none;
+      width: 100%;  
+    }
+
+    #restapi section:first-of-type {
+      margin-right: 0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .container {
+      padding-top: 25%;
+    }    
+    
+}
