@@ -15,16 +15,22 @@ $(document).ready(function () {
       } else {
         $('.menu ul').addClass('mobilestyle');
         $('.slideIt').slideDown('slow');
-      } 
-      $('.menu ul').removeClass('navbar');
+      }      
     });
     
-    //to prevent 'no menu problem' caused by inline style
-    //added by jQuery slideUp method to div.slideIt
+
     $(window).resize(function() {
-      if($(window).width() > 800) {
-        $('.slideIt').css('display', 'block');
-     }
+      if($(window).width() > 800) {        
+        if(window.scrollY > 20) {
+          $('.menu ul').addClass('navbar');
+        }
+        //to prevent 'no menu problem' caused by inline style
+        //added by jQuery slideUp method to div.slideIt
+        $('.slideIt').css('display', 'block');  
+      } else {
+       //to prevent strange mobile menu styles in one scenario after resize below 800  
+       $('.menu ul').removeClass('navbar');
+      }
     });  
     
 //    ********************************
