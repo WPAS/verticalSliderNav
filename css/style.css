@@ -68,7 +68,7 @@ h3 {
     background-color: black;
 }
 
-#intro article, #inne article {
+#intro article, #restapi article {
   color: white;
 }
 
@@ -89,7 +89,7 @@ h3 {
 }
 
 
-.button, #react .button:hover {
+.button, #react .button:hover, #restapi .button:hover {
   background-color: white;
   border: 2px solid black;
   border-radius: 10px;
@@ -123,6 +123,13 @@ h3 {
     transform: rotate(-6deg);    
 }
 
+#angular img {
+  display: block;
+  margin: -4rem auto 3rem;
+  transform: rotate(6deg);
+  width: 70%;
+}
+
 #rwd .button:last-of-type {
     margin-right: 0;
 }
@@ -133,7 +140,7 @@ h3 {
   width: 48%; 
 }
 
-#react .button, .button:hover {
+#react .button, #restapi .button, .button:hover {
     background-color: black;
     border: 2px solid white;
     color: white;    
@@ -159,8 +166,8 @@ h3 {
 }
 
 footer {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   height: 100px;
   padding-top: 40px;
   text-align: center;
@@ -366,6 +373,12 @@ footer {
     width: 80%;      
   }
   
+  #angular img {
+    margin-bottom: 4rem;
+    margin-top: .5rem;    
+    width: 100%;      
+  }
+  
   #react article {
     margin-top: 4rem;
   }
@@ -389,5 +402,9 @@ footer {
   
   #intro {
     background-image: url('../images/sunrise_vertical.jpg');
+  }
+  
+  #react img {
+    width: 90%;      
   }
 }
